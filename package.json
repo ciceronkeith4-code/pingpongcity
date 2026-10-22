@@ -2,7 +2,8 @@
   "name": "pingpong-city",
   "private": true,
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.js -i input.css -o tailwind.css --minify"
+    "build": "tailwindcss -c tailwind.config.js -i input.css -o public/tailwind.css --minify",
+    "dev": "tailwindcss -c tailwind.config.js -i input.css -o public/tailwind.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "3.4.17"

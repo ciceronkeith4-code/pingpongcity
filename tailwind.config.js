@@ -1,7 +1,7 @@
-/** Design tokens for PingPong City. Build the stylesheet with: npm run build:css */
+/** Design tokens for PingPong City. Build the stylesheet with: npm run build */
 module.exports = {
   darkMode: "class",
-  content: ["./code.html"],
+  content: ["./public/index.html"],
   theme: {
     extend: {
       colors: {
