@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PingPong City Sports Center · Araneta City, Quezon City</title>
+<meta name="description" content="Table tennis at Level 3 Farmers Plaza, Araneta City, Cubao, Quezon City. Unli play from ₱100, table rental and coaching. Open daily from 10 AM."/>
+<meta name="theme-color" content="#0e0e0e"/>
+<!-- Link preview (Facebook, Messenger, etc). Once the site is hosted, change og:image to the full https:// address of logo.png. -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="PingPong City Sports Center · Araneta City, Quezon City"/>
+<meta property="og:description" content="Unli play from ₱100, table rental and coaching on Level 3 of Farmers Plaza, Araneta City. Open daily from 10 AM."/>
+<meta property="og:image" content="logo.png"/>
+<link rel="icon" type="image/png" href="logo-mark.png"/>
+<link rel="apple-touch-icon" href="logo.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Figtree:wght@400;500;600;700&amp;family=Barlow+Condensed:ital,wght@1,700&amp;display=swap" rel="stylesheet"/>
+<link href="tailwind.css" rel="stylesheet"/>
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root{--ease-out:cubic-bezier(0.23,1,0.32,1);}
+  html{scroll-behavior:smooth;}
+  section[id]{scroll-margin-top:80px;}
+  .eyebrow{font:600 14px/1 Figtree,"Segoe UI",Arial,sans-serif;color:#ff544f;display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:#fde400;flex:none;}
+  .on-light .eyebrow{color:#c8282c;}
+  .chamfer{clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);}
+  .net{position:relative;height:3px;background:rgba(229,226,225,.85);margin-bottom:56px;}
+  .net::before,.net::after{content:"";position:absolute;top:-6px;width:10px;height:15px;background:#ff544f;}
+  .net::before{left:0;}.net::after{right:0;}
+  .leader{flex:1;min-width:14px;border-bottom:2px dotted rgba(229,226,225,.28);transform:translateY(-5px);}
+  .navlink{color:#e9bcb8;border-bottom:2px solid transparent;transition:color 150ms ease,border-color 200ms ease;}
+  .navlink:hover{color:#e5e2e1;}
+  .navlink[aria-current="true"]{color:#e5e2e1;border-bottom-color:#ff544f;}
+  .mnav a{display:block;padding:18px 16px;color:#e9bcb8;border-bottom:1px solid #353534;}
+  .mnav a[aria-current="true"]{color:#e5e2e1;box-shadow:inset 3px 0 0 #ff544f;}
+  .linkline{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px;text-decoration-color:#5e3f3c;}
+  .linkline:hover{color:#ff544f;text-decoration-color:#ff544f;}
+  a:focus-visible,button:focus-visible{outline:2px solid #ff544f;outline-offset:3px;}
+
+  /* Press feedback on buttons */
+  .press{transition:background-color 150ms ease,color 150ms ease,transform 120ms var(--ease-out);}
+  .press:active{transform:scale(.97);}
+
+  /* Hero load-in: CSS so it stays smooth while three.js loads */
+  .js .intro{opacity:0;transform:translateY(12px);animation:intro 700ms var(--ease-out) forwards;animation-delay:var(--d,0ms);}
+  @keyframes intro{to{opacity:1;transform:none;}}
+
+  /* Scroll reveal, plays once per element */
+  .js .reveal{opacity:0;transform:translateY(16px);transition:opacity 700ms var(--ease-out),transform 700ms var(--ease-out);transition-delay:var(--d,0ms);}
+  .js .reveal.is-visible{opacity:1;transform:none;}
+
+  /* Hero 3D table; the SVG stays as the fallback */
+  .stage{position:relative;aspect-ratio:5/3;}
+  .stage > svg,.stage > canvas{position:absolute;inset:0;width:100%;height:100%;display:block;}
+  #hero-3d{opacity:0;transition:opacity 600ms var(--ease-out);}
+  #hero-fallback{transition:opacity 400ms ease;}
+  .stage.is-3d #hero-3d{opacity:1;}
+  .stage.is-3d #hero-fallback{opacity:0;}
+
+  /* Skyline: train passes every so often; aviation light blinks */
+  .sky-train{animation:sky-train 30s linear infinite;}
+  @keyframes sky-train{0%{transform:translateX(-220px);}55%{transform:translateX(1660px);}100%{transform:translateX(1660px);}}
+  .sky-beacon{animation:sky-beacon 2.4s linear infinite;}
+  @keyframes sky-beacon{0%,12%{opacity:1;}22%,100%{opacity:.15;}}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .sky-train{animation:none;transform:translateX(-220px);}
+    .sky-beacon{animation:none;}
+    .js .intro{transform:none;animation-duration:300ms;}
+    .js .reveal{transform:none;transition:opacity 300ms ease;}
+    .press:active{transform:none;}
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<a href="#top" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-white focus:text-black focus:px-4 focus:py-2">Skip to content</a>
+
+<header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest border-b border-surface-container-highest">
+<div class="h-20 max-w-7xl mx-auto px-margin lg:px-margin-desktop flex items-center justify-between gap-4">
+<a class="flex items-center gap-space-sm" href="#top">
+<img alt="PingPong City logo" class="w-11 h-11 shrink-0" src="logo-mark.png" width="44" height="44"/>
+<div class="flex flex-col leading-none"><span class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight">PINGPONG CITY</span><span class="font-body-sm text-body-sm text-on-surface-variant tracking-wide">Sports Center</span></div>
+</a>
+<nav class="hidden lg:flex items-center h-20 gap-space-lg" aria-label="Main">
+<a data-nav="home" aria-current="true" class="navlink h-full flex items-center font-label-lg text-label-lg tracking-wider uppercase" href="#top">Home</a>
+<a data-nav="find-us" class="navlink h-full flex items-center font-label-lg text-label-lg tracking-wider uppercase" href="#find-us">Find Us</a>
+<a data-nav="hours" class="navlink h-full flex items-center font-label-lg text-label-lg tracking-wider uppercase" href="#hours">Hours</a>
+<a data-nav="rates" class="navlink h-full flex items-center font-label-lg text-label-lg tracking-wider uppercase" href="#rates">Rates</a>
+<a data-nav="contact" class="navlink h-full flex items-center font-label-lg text-label-lg tracking-wider uppercase" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="chamfer hidden sm:inline-flex bg-primary-container hover:bg-white text-[#131313] font-label-lg text-label-lg uppercase tracking-wider px-space-lg py-3 whitespace-nowrap press" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">JOIN THE FB GROUP</a>
+<button id="menu-btn" type="button" class="lg:hidden w-11 h-11 border border-outline-variant flex items-center justify-center text-on-surface" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+<svg width="20" height="14" viewBox="0 0 20 14" aria-hidden="true"><g id="menu-icon" stroke="currentColor" stroke-width="2"><line x1="0" y1="1" x2="20" y2="1"/><line x1="0" y1="7" x2="20" y2="7"/><line x1="0" y1="13" x2="20" y2="13"/></g></svg>
+</button>
+</div>
+</div>
+<nav id="mobile-nav" class="mnav hidden lg:hidden bg-surface-container-lowest border-t border-surface-container-highest font-label-lg text-label-lg uppercase tracking-wider" aria-label="Mobile">
+<a data-nav="home" aria-current="true" href="#top">Home</a>
+<a data-nav="find-us" href="#find-us">Find Us</a>
+<a data-nav="hours" href="#hours">Hours</a>
+<a data-nav="rates" href="#rates">Rates</a>
+<a data-nav="contact" href="#contact">Contact</a>
+<div class="p-4"><a class="chamfer press block text-center bg-primary-container hover:bg-white text-[#131313] py-4 px-4" style="padding:16px;color:#131313;border:0" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">JOIN THE FB GROUP</a></div>
+</nav>
+</header>
+
+<main class="w-full pt-20 bg-surface min-h-screen" id="top">
+<div class="flex flex-col w-full text-on-surface">
+
+<!-- 1. HERO -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden border-b border-surface-container-highest" id="home">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop pt-12 lg:pt-16 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+<div class="lg:col-span-6">
+<p class="intro font-body-md text-body-md text-on-surface-variant mb-5">Level 3, Farmers Plaza, Araneta City, Cubao</p>
+<h1 class="font-headline-xl uppercase text-on-surface tracking-tight" style="font-size:clamp(56px,9vw,112px);line-height:.88;font-weight:800">
+<span class="intro block" style="--d:60ms">Your game.</span>
+<span class="intro block" style="--d:120ms">Your city.</span>
+<span class="intro block text-primary-container" style="--d:180ms">Your table.</span>
+</h1>
+<p class="intro font-body-lg text-body-lg text-on-surface-variant max-w-md mt-7" style="--d:260ms">Unlimited play from ₱100. Rent a table by the hour, or book a coach.</p>
+<div class="intro mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4" style="--d:320ms">
+<a class="chamfer inline-flex items-center justify-center bg-primary-container hover:bg-white text-[#131313] font-label-lg text-label-lg uppercase tracking-wider px-8 py-4 press" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">JOIN THE FB GROUP</a>
+<a class="inline-flex items-center justify-center text-on-surface hover:text-primary-container font-label-lg text-label-lg uppercase tracking-wider py-4 underline underline-offset-8 decoration-2 decoration-outline-variant hover:decoration-primary-container transition-colors" href="#rates">SEE OUR RATES</a>
+</div>
+</div>
+<!-- The table, used as the rate board -->
+<div class="intro lg:col-span-6" style="--d:380ms">
+<div class="flex flex-wrap items-end justify-between gap-x-4 gap-y-1 mb-2 font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Rates in Philippine pesos</span>
+<span class="text-secondary-container font-semibold" id="live-status">Open daily from 10 AM</span>
+</div>
+<p class="sr-only">Unli play starts at ₱100. Solo rental is ₱200 per hour.</p>
+<div class="stage" id="stage">
+<canvas id="hero-3d" aria-hidden="true"></canvas>
+<svg id="hero-fallback" viewBox="0 0 600 360" aria-hidden="true">
+<rect x="30" y="30" width="540" height="300" fill="#181818" stroke="#e5e2e1" stroke-width="3"/>
+<rect x="44" y="44" width="512" height="272" fill="none" stroke="#e5e2e1" stroke-opacity=".28" stroke-width="2"/>
+<line x1="44" y1="180" x2="556" y2="180" stroke="#e5e2e1" stroke-opacity=".18" stroke-width="2"/>
+<line x1="300" y1="14" x2="300" y2="346" stroke="#e5e2e1" stroke-width="3"/>
+<rect x="294" y="6" width="12" height="14" fill="#ff544f"/>
+<rect x="294" y="340" width="12" height="14" fill="#ff544f"/>
+<path d="M90 118 Q 250 2 420 74" fill="none" stroke="#fde400" stroke-width="2.5" stroke-opacity=".75" stroke-dasharray="6 7"/>
+<circle cx="420" cy="74" r="10" fill="#fde400"/>
+<g style="font-family:'Big Shoulders Display','Segoe UI',Arial,sans-serif" fill="#e5e2e1">
+<text x="72" y="224" font-size="112" font-weight="800" letter-spacing="-2"><tspan font-family="Arial,'Segoe UI',sans-serif" font-size="84" font-weight="700">₱</tspan>100</text>
+<text x="76" y="268" font-size="26" font-weight="700" letter-spacing="2" fill="#e9bcb8">UNLI PLAY</text>
+<text x="76" y="296" font-size="18" font-weight="700" letter-spacing="2" fill="#af8783">STARTING RATE</text>
+<text x="332" y="224" font-size="112" font-weight="800" letter-spacing="-2" fill="#ff544f"><tspan font-family="Arial,'Segoe UI',sans-serif" font-size="84" font-weight="700">₱</tspan>200</text>
+<text x="336" y="268" font-size="26" font-weight="700" letter-spacing="2" fill="#e9bcb8">SOLO RENTAL</text>
+<text x="336" y="296" font-size="18" font-weight="700" letter-spacing="2" fill="#af8783">PER HOUR</text>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 mt-10 h-[96px] sm:h-[150px] overflow-hidden" aria-hidden="true"><svg class="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1440 160" preserveAspectRatio="xMidYMax slice"><defs>
+<linearGradient id="sky-haze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a3d" stop-opacity="0"/><stop offset="1" stop-color="#ff7a3d" stop-opacity=".07"/></linearGradient>
+<pattern id="sky-office" width="5" height="6" patternUnits="userSpaceOnUse"><rect x="1" y="1" width="3" height="4" fill="#222"/></pattern>
+<pattern id="sky-res" width="6" height="5" patternUnits="userSpaceOnUse"><rect x="0" y="4" width="6" height="1" fill="#242424"/><rect x="1" y="1" width="2" height="2" fill="#202020"/><rect x="4" y="1" width="1" height="2" fill="#202020"/></pattern>
+</defs>
+<rect x="0" y="30" width="1440" height="130" fill="url(#sky-haze)"/><g fill="#141414"><rect x="0" y="131.6" width="19" height="28.4"/><rect x="18" y="118.8" width="42" height="41.2"/><rect x="59" y="106.3" width="44" height="53.7"/><rect x="88" y="102.3" width="5" height="4"/><rect x="102" y="122.9" width="42" height="37.1"/><rect x="143" y="118" width="43" height="42"/><rect x="185" y="119.8" width="59" height="40.2"/><rect x="202" y="115.8" width="5" height="4"/><rect x="243" y="68.5" width="44" height="91.5"/><rect x="286" y="101.8" width="44" height="58.2"/><rect x="329" y="90" width="47" height="70"/><rect x="338" y="86" width="5" height="4"/><rect x="375" y="75.4" width="35" height="84.6"/><rect x="397" y="71.4" width="5" height="4"/><rect x="409" y="104.1" width="35" height="55.9"/><rect x="443" y="93.7" width="51" height="66.3"/><rect x="493" y="111.2" width="25" height="48.8"/><rect x="517" y="93.4" width="27" height="66.6"/><rect x="532" y="89.4" width="5" height="4"/><rect x="543" y="94.7" width="61" height="65.3"/><rect x="603" y="107.2" width="61" height="52.8"/><rect x="663" y="76.4" width="59" height="83.6"/><rect x="721" y="76.3" width="63" height="83.7"/><rect x="783" y="93.1" width="19" height="66.9"/><rect x="801" y="86" width="44" height="74"/><rect x="844" y="98.9" width="56" height="61.1"/><rect x="899" y="104.6" width="44" height="55.4"/><rect x="902" y="100.6" width="5" height="4"/><rect x="942" y="88.8" width="62" height="71.2"/><rect x="977" y="84.8" width="5" height="4"/><rect x="1003" y="94.7" width="46" height="65.3"/><rect x="1048" y="98.9" width="64" height="61.1"/><rect x="1111" y="118.4" width="57" height="41.6"/><rect x="1167" y="119.5" width="45" height="40.5"/><rect x="1211" y="97.4" width="56" height="62.6"/><rect x="1266" y="108.1" width="64" height="51.9"/><rect x="1329" y="122.9" width="41" height="37.1"/><rect x="1369" y="126" width="58" height="34"/><rect x="1426" y="128.1" width="43" height="31.9"/></g><g fill="#1b1b1b"><rect x="40" y="102" width="60" height="58"/><rect x="104" y="76" width="44" height="84"/><rect x="134" y="69" width="9" height="7"/><rect x="110" y="72" width="12" height="4"/><rect x="168" y="96" width="72" height="64"/><rect x="176" y="87" width="56" height="9"/><rect x="250" y="86" width="30" height="74"/><rect x="290" y="42" width="36" height="118"/><rect x="294" y="36" width="28" height="6"/><rect x="307" y="30" width="2" height="6"/><rect x="332" y="32" width="36" height="128"/><rect x="336" y="26" width="28" height="6"/><rect x="349" y="20" width="2" height="6"/><rect x="374" y="48" width="36" height="112"/><rect x="378" y="42" width="28" height="6"/><rect x="391" y="36" width="2" height="6"/><rect x="416" y="58" width="36" height="102"/><rect x="420" y="52" width="28" height="6"/><rect x="433" y="46" width="2" height="6"/><polygon points="640,26 698,16 698,160 640,160"/><rect x="692" y="0" width="2" height="16"/><rect x="704" y="64" width="40" height="96"/><rect x="812" y="70" width="104" height="90"/><rect x="930" y="48" width="46" height="112"/><rect x="952" y="26" width="2" height="22"/><rect x="936" y="43" width="34" height="5"/><rect x="992" y="84" width="62" height="76"/><rect x="1040" y="77" width="9" height="7"/><rect x="998" y="80" width="12" height="4"/><rect x="1150" y="58" width="50" height="102"/><rect x="1158" y="49" width="34" height="9"/><rect x="1206" y="96" width="72" height="64"/><rect x="1290" y="72" width="42" height="88"/><rect x="1318" y="65" width="9" height="7"/><rect x="1296" y="68" width="12" height="4"/><rect x="1348" y="108" width="84" height="52"/></g><rect x="42" y="107" width="56" height="27" fill="url(#sky-office)"/><rect x="106" y="81" width="40" height="53" fill="url(#sky-res)"/><rect x="170" y="101" width="68" height="33" fill="url(#sky-office)"/><rect x="252" y="91" width="26" height="43" fill="url(#sky-res)"/><rect x="292" y="47" width="32" height="87" fill="url(#sky-res)"/><rect x="334" y="37" width="32" height="97" fill="url(#sky-res)"/><rect x="376" y="53" width="32" height="81" fill="url(#sky-res)"/><rect x="418" y="63" width="32" height="71" fill="url(#sky-res)"/><rect x="642" y="30" width="54" height="104" fill="url(#sky-office)"/><rect x="706" y="69" width="36" height="65" fill="url(#sky-office)"/><rect x="814" y="75" width="100" height="59" fill="url(#sky-res)"/><rect x="932" y="53" width="42" height="81" fill="url(#sky-office)"/><rect x="994" y="89" width="58" height="45" fill="url(#sky-res)"/><rect x="1152" y="63" width="46" height="71" fill="url(#sky-office)"/><rect x="1208" y="101" width="68" height="33" fill="url(#sky-office)"/><rect x="1292" y="77" width="38" height="57" fill="url(#sky-res)"/><rect x="1350" y="113" width="80" height="21" fill="url(#sky-office)"/><rect x="46" y="121" width="3" height="4" fill="#fde400" fill-opacity="0.5"/><rect x="51" y="121" width="3" height="4" fill="#fde400" fill-opacity="0.6"/><rect x="71" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="121" y="101" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="181" y="103" width="3" height="4" fill="#fde400" fill-opacity="0.8"/><rect x="181" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="186" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="186" y="121" width="3" height="4" fill="#fde400" fill-opacity="0.6"/><rect x="201" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="211" y="127" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="221" y="115" width="3" height="4" fill="#fde400" fill-opacity="0.8"/><rect x="226" y="127" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="231" y="109" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="231" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="295" y="66" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="295" y="96" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="301" y="71" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="301" y="81" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="313" y="96" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="319" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="337" y="81" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="343" y="46" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="343" y="76" width="2" height="2" fill="#fde400" fill-opacity="0.7"/><rect x="343" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="349" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="349" y="121" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="349" y="126" width="2" height="2" fill="#fde400" fill-opacity="0.6"/><rect x="361" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="379" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="385" y="101" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="385" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="397" y="66" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="397" y="86" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="397" y="111" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="421" y="66" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="427" y="86" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="433" y="71" width="2" height="2" fill="#fde400" fill-opacity="0.8"/><rect x="433" y="76" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="439" y="71" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="439" y="81" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="439" y="91" width="2" height="2" fill="#fde400" fill-opacity="0.8"/><rect x="445" y="71" width="2" height="2" fill="#fde400" fill-opacity="0.6"/><rect x="445" y="111" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="646" y="31" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="651" y="31" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="651" y="49" width="3" height="4" fill="#fde400" fill-opacity="0.7"/><rect x="656" y="91" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="661" y="121" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="676" y="37" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="676" y="67" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="676" y="85" width="3" height="4" fill="#fde400" fill-opacity="0.8"/><rect x="686" y="49" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="691" y="67" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="721" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="731" y="97" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="823" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="835" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="841" y="111" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="841" y="116" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="847" y="81" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="847" y="111" width="2" height="2" fill="#fde400" fill-opacity="0.8"/><rect x="853" y="96" width="2" height="2" fill="#fde400" fill-opacity="0.7"/><rect x="865" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="889" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="889" y="96" width="2" height="2" fill="#fde400" fill-opacity="0.7"/><rect x="895" y="101" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="901" y="101" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="901" y="116" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="907" y="86" width="2" height="2" fill="#fde400" fill-opacity="0.5"/><rect x="907" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="936" y="121" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="946" y="91" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="946" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="951" y="97" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="956" y="55" width="3" height="4" fill="#fde400" fill-opacity="0.7"/><rect x="997" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="1003" y="106" width="2" height="2" fill="#fde400" fill-opacity="0.5"/><rect x="1015" y="116" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="1015" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1027" y="121" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1027" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="1045" y="116" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1156" y="91" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1156" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1161" y="97" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1166" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="1171" y="67" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1176" y="97" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1181" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="1236" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="1256" y="109" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1256" y="127" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="1303" y="96" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="1309" y="106" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1309" y="116" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1309" y="126" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1315" y="81" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="1315" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.8"/><rect x="1315" y="106" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="1315" y="121" width="2" height="2" fill="#e9b24a" fill-opacity="0.5"/><rect x="1321" y="91" width="2" height="2" fill="#e9b24a" fill-opacity="0.7"/><rect x="1321" y="106" width="2" height="2" fill="#e9b24a" fill-opacity="0.6"/><rect x="1351" y="127" width="3" height="4" fill="#fde400" fill-opacity="0.6"/><rect x="1361" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><rect x="1371" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.5"/><rect x="1371" y="121" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="1376" y="115" width="3" height="4" fill="#e9b24a" fill-opacity="0.8"/><rect x="1401" y="121" width="3" height="4" fill="#fde400" fill-opacity="0.7"/><rect x="1421" y="121" width="3" height="4" fill="#e9b24a" fill-opacity="0.6"/><rect x="1426" y="127" width="3" height="4" fill="#e9b24a" fill-opacity="0.7"/><g fill="#212121"><rect x="470" y="134" width="184" height="26"/><path d="M466 136 Q562 98 658 136 Z"/><rect x="0" y="128" width="124" height="32"/><rect x="664" y="118" width="148" height="42"/><rect x="1032" y="122" width="108" height="38"/><rect x="1284" y="130" width="156" height="30"/><rect x="1096" y="48" width="4" height="112"/><rect x="1050" y="48" width="150" height="3"/><rect x="1054" y="51" width="20" height="6"/><rect x="1094" y="40" width="8" height="8"/></g><path d="M562 117 Q528 119 504 133 M562 117 Q596 119 620 133 M496 128 Q562 122 628 128" stroke="#2b2b2b" stroke-width="1" fill="none"/><path d="M1098 51 L1180 51 M1180 51 L1180 82" stroke="#2c2c2c" stroke-width="1" fill="none"/><rect x="1176" y="82" width="8" height="4" fill="#2c2c2c"/><rect x="670" y="124" width="136" height="2" fill="#e9b24a" fill-opacity=".22"/><g fill="#2a2a2a"><rect x="0" y="134" width="1440" height="6"/><rect x="28" y="140" width="16" height="3"/><rect x="33" y="143" width="6" height="17"/><rect x="124" y="140" width="16" height="3"/><rect x="129" y="143" width="6" height="17"/><rect x="220" y="140" width="16" height="3"/><rect x="225" y="143" width="6" height="17"/><rect x="316" y="140" width="16" height="3"/><rect x="321" y="143" width="6" height="17"/><rect x="412" y="140" width="16" height="3"/><rect x="417" y="143" width="6" height="17"/><rect x="508" y="140" width="16" height="3"/><rect x="513" y="143" width="6" height="17"/><rect x="604" y="140" width="16" height="3"/><rect x="609" y="143" width="6" height="17"/><rect x="700" y="140" width="16" height="3"/><rect x="705" y="143" width="6" height="17"/><rect x="796" y="140" width="16" height="3"/><rect x="801" y="143" width="6" height="17"/><rect x="892" y="140" width="16" height="3"/><rect x="897" y="143" width="6" height="17"/><rect x="988" y="140" width="16" height="3"/><rect x="993" y="143" width="6" height="17"/><rect x="1084" y="140" width="16" height="3"/><rect x="1089" y="143" width="6" height="17"/><rect x="1180" y="140" width="16" height="3"/><rect x="1185" y="143" width="6" height="17"/><rect x="1276" y="140" width="16" height="3"/><rect x="1281" y="143" width="6" height="17"/><rect x="1372" y="140" width="16" height="3"/><rect x="1377" y="143" width="6" height="17"/></g></svg><svg class="absolute bottom-0 left-0 w-full h-full" viewBox="0 0 1440 160" preserveAspectRatio="xMidYMax slice"><g class="sky-train"><rect x="0" y="125" width="64" height="9" fill="#2f2f2f"/><rect x="4" y="127" width="56" height="2.5" fill="#e9b24a" fill-opacity=".55"/><rect x="67" y="125" width="64" height="9" fill="#2f2f2f"/><rect x="71" y="127" width="56" height="2.5" fill="#e9b24a" fill-opacity=".55"/><rect x="134" y="125" width="64" height="9" fill="#2f2f2f"/><rect x="138" y="127" width="56" height="2.5" fill="#e9b24a" fill-opacity=".55"/></g><circle class="sky-beacon" cx="693" cy="-1" r="1.8" fill="#ff544f"/></svg></div>
+<div class="relative z-10 border-t border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Open daily from 10 AM</span>
+<span>Closes 9 PM Mon–Thu and Sun, 10 PM Fri and Sat</span>
+<span>TikTok @pingpongcity</span>
+</div>
+</div>
+</section>
+
+<!-- 2. FIND US -->
+<section class="w-full bg-surface-container-lowest py-16 lg:py-20 border-b border-surface-container-highest" id="find-us">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<h2 class="reveal font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight mb-10">LEVEL 3, FARMERS PLAZA.</h2>
+<div class="reveal grid grid-cols-1 lg:grid-cols-12 gap-0 border border-surface-container-highest" style="--d:80ms">
+<div class="lg:col-span-7 p-8 lg:p-10 flex flex-col justify-between gap-10 bg-surface-container-low">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mb-3">Address</div>
+<p class="font-headline-lg text-headline-lg text-on-surface uppercase" style="font-size:clamp(30px,4vw,46px);line-height:1.05">Level 3 Farmers Plaza,<br/>Araneta City, Cubao,<br/>Quezon City, Philippines 1109</p>
+</div>
+<div>
+<a class="chamfer inline-flex items-center bg-white hover:bg-primary-container text-black font-label-lg text-label-lg uppercase tracking-wider px-8 py-4 press" href="https://www.google.com/maps/search/?api=1&amp;query=PingPong+City+Sports+Center+Farmers+Plaza+Araneta+City+Cubao+Quezon+City" target="_blank" rel="noopener">OPEN IN GOOGLE MAPS</a>
+</div>
+</div>
+<div class="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-between gap-8 border-t lg:border-t-0 lg:border-l border-surface-container-highest">
+<div class="font-headline-xl text-primary-container" style="font-size:clamp(88px,10vw,128px);line-height:.85;font-weight:800">100%</div>
+<div>
+<p class="font-headline-md text-headline-md uppercase text-on-surface">Recommend PingPong City</p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Based on 5 reviews on Facebook.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 3. HOURS (light break) -->
+<section class="on-light w-full bg-[#F4F4F4] text-[#131313] py-16 lg:py-24" id="hours">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="reveal border-b-2 border-[#131313] pb-6 mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="eyebrow">Opening hours</span>
+<h2 class="font-headline-xl text-headline-xl uppercase tracking-tight text-[#131313]">OPEN SEVEN DAYS A WEEK.</h2>
+</div>
+<p class="max-w-md font-body-md text-body-md text-[#4A4A4A]">Every day starts at 10:00 AM. Closing time depends on the day.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+<div class="lg:col-span-7 flex flex-col divide-y-2 divide-[#E0E0E0]">
+<div class="reveal py-7 first:pt-0">
+<h3 class="font-headline-md text-headline-md uppercase text-[#131313] tracking-tight">Monday to Thursday</h3>
+<p class="font-headline-lg text-headline-lg text-[#c8282c] mt-1">10:00 AM – 9:00 PM</p>
+</div>
+<div class="reveal py-7" style="--d:60ms">
+<h3 class="font-headline-md text-headline-md uppercase text-[#131313] tracking-tight">Friday and Saturday</h3>
+<p class="font-headline-lg text-headline-lg text-[#c8282c] mt-1">10:00 AM – 10:00 PM</p>
+<p class="font-body-sm text-body-sm text-[#666] mt-1">We close an hour later than the rest of the week.</p>
+</div>
+<div class="reveal py-7 last:pb-0" style="--d:120ms">
+<h3 class="font-headline-md text-headline-md uppercase text-[#131313] tracking-tight">Sunday</h3>
+<p class="font-headline-lg text-headline-lg text-[#c8282c] mt-1">10:00 AM – 9:00 PM</p>
+</div>
+</div>
+<div class="reveal lg:col-span-5 flex" style="--d:180ms">
+<div class="w-full bg-[#131313] text-white border-4 border-[#131313] p-8 lg:p-10 flex flex-col justify-between gap-8" aria-live="polite">
+<div>
+<div class="font-body-sm text-body-sm text-gray-300 mb-3">Right now</div>
+<div class="font-headline-xl text-secondary-container uppercase" id="today-status" style="font-size:clamp(48px,6vw,72px);line-height:.95;font-weight:800">Open daily</div>
+</div>
+<div>
+<p class="font-headline-md text-headline-md uppercase" id="today-hours">From 10:00 AM</p>
+<p class="font-body-md text-body-md text-gray-300 mt-2" id="today-range">Hours differ slightly by day. See the list.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 4. RATES -->
+<section class="w-full bg-[#141414] py-16 lg:py-20 border-b border-surface-container-highest" id="rates">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop">
+<div class="reveal max-w-3xl mb-14">
+<span class="eyebrow">Rates</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase tracking-tight">PICK HOW YOU WANT TO PLAY.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-3">All prices are in Philippine pesos.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-0 lg:divide-x divide-surface-container-highest">
+<div class="reveal lg:pr-10">
+<h3 class="font-headline-md text-headline-md italic text-on-surface" style="font-family:'Barlow Condensed','Segoe UI',Arial,sans-serif">Unlimited Play Rates:</h3>
+<ul class="mt-6 p-0 list-none">
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Unli Play</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱100</span></li>
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Unli Play with Racket</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱150</span></li>
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Unli Play with Racket and Ball</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱160</span></li>
+</ul>
+</div>
+<div class="reveal lg:px-10" style="--d:70ms">
+<h3 class="font-headline-md text-headline-md italic text-on-surface" style="font-family:'Barlow Condensed','Segoe UI',Arial,sans-serif">Per Hour Rates:</h3>
+<p class="font-body-sm text-body-sm italic text-on-surface-variant mt-1">20% discount for PWD, senior citizens and students on per hour rates</p>
+<ul class="mt-5 p-0 list-none">
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Solo Table Rental <span class="text-on-surface-variant text-body-sm">(max of 4 players)</span></span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱200</span></li>
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Racket</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱30</span></li>
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">Ball</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱10</span></li>
+</ul>
+</div>
+<div class="reveal lg:pl-10" style="--d:140ms">
+<h3 class="font-headline-md text-headline-md italic text-on-surface" style="font-family:'Barlow Condensed','Segoe UI',Arial,sans-serif">Coaching Rates:</h3>
+<p class="font-body-sm text-body-sm italic text-on-surface-variant mt-1">Inquire for available slots</p>
+<ul class="mt-5 p-0 list-none">
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">1 Hour for 1 Student</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱500</span></li>
+<li class="flex items-baseline gap-3 py-4 border-b border-surface-container-highest"><span class="font-body-lg text-body-lg">1 Hour for 2 Students</span><span class="leader"></span><span class="font-headline-lg text-headline-lg">₱600</span></li>
+</ul>
+</div>
+</div>
+<p class="mt-12 font-body-md text-body-md text-on-surface-variant max-w-3xl">
+Questions about rates, what's included, or coaching slots? Send a message to <span class="text-on-surface">Pingpong-City Sports Center</span> on Facebook Messenger, or email
+<a class="linkline text-on-surface" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saissylois@gmail.com" target="_blank" rel="noopener">saissylois@gmail.com</a>.
+</p>
+</div>
+</section>
+
+<!-- 5. CONTACT -->
+<section class="w-full bg-surface-container-lowest py-20 lg:py-28 border-b border-surface-container-highest" id="contact">
+<div class="max-w-4xl mx-auto px-margin lg:px-margin-desktop">
+<div class="net" aria-hidden="true"></div>
+<h2 class="reveal font-headline-xl text-on-surface uppercase tracking-tight" style="font-size:clamp(48px,7vw,84px);line-height:.92;font-weight:800">GET IN TOUCH.</h2>
+<p class="reveal font-body-lg text-body-lg text-on-surface-variant mt-5 max-w-xl" style="--d:60ms">Join our Facebook group to meet other players, or reach us by email, Messenger or TikTok.</p>
+<dl class="reveal mt-12 border-t border-surface-container-highest m-0" style="--d:120ms">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-6 py-5 border-b border-surface-container-highest"><dt class="font-body-md text-body-md text-on-surface-variant">Facebook group</dt><dd class="sm:col-span-2 font-headline-sm text-headline-sm m-0"><a class="linkline" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">Join our Facebook group</a></dd></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-6 py-5 border-b border-surface-container-highest"><dt class="font-body-md text-body-md text-on-surface-variant">Email</dt><dd class="sm:col-span-2 font-headline-sm text-headline-sm m-0"><a class="linkline" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saissylois@gmail.com" target="_blank" rel="noopener">saissylois@gmail.com</a></dd></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-6 py-5 border-b border-surface-container-highest"><dt class="font-body-md text-body-md text-on-surface-variant">TikTok</dt><dd class="sm:col-span-2 font-headline-sm text-headline-sm m-0"><a class="linkline" href="https://www.tiktok.com/@pingpongcity" target="_blank" rel="noopener">@pingpongcity</a></dd></div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-6 py-5 border-b border-surface-container-highest"><dt class="font-body-md text-body-md text-on-surface-variant">Messenger</dt><dd class="sm:col-span-2 m-0"><span class="font-headline-sm text-headline-sm">Pingpong-City Sports Center</span><span class="block font-body-sm text-body-sm text-on-surface-variant mt-1">Search this name on Facebook, then tap Message.</span></dd></div>
+</dl>
+</div>
+</section>
+
+<!-- 6. CLOSING BANNER -->
+<section class="relative w-full bg-surface-container-lowest py-20 lg:py-24 overflow-hidden">
+<div class="max-w-4xl mx-auto px-margin lg:px-margin-desktop relative z-10 text-center">
+<h2 class="reveal font-headline-xl text-on-surface uppercase tracking-tight" style="font-size:clamp(48px,7vw,84px);line-height:.92;font-weight:800">SEE YOU AT <span class="text-primary-container">FARMERS PLAZA.</span></h2>
+<p class="reveal font-body-lg text-body-lg text-on-surface-variant mt-5 max-w-xl mx-auto" style="--d:60ms">Level 3, Araneta City, Cubao. Bring your friends and your rivalry.</p>
+<div class="reveal mt-8 flex justify-center" style="--d:120ms">
+<a class="chamfer inline-flex items-center justify-center bg-primary-container hover:bg-white text-[#131313] font-label-lg text-label-lg uppercase tracking-wider px-10 py-4 press" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">JOIN THE FB GROUP</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+<footer class="w-full bg-surface-container-lowest border-t border-surface-container-highest">
+<div class="max-w-7xl mx-auto px-margin lg:px-margin-desktop py-space-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-xl border-b border-surface-container-highest pb-space-xl">
+<div>
+<div class="flex items-center gap-space-sm mb-space-md"><img alt="" class="w-9 h-9 shrink-0" src="logo-mark.png" width="36" height="36"/><span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">PINGPONG CITY</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Sports Center. Table tennis at Level 3 Farmers Plaza, Araneta City, Cubao, Quezon City.</p>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Pages</h4>
+<ul class="space-y-3 p-0 m-0 list-none">
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#find-us">Find us</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#hours">Hours</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#rates">Rates</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Visit</h4>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<p>Level 3 Farmers Plaza, Araneta City, Cubao, Quezon City, Philippines, 1109</p>
+<p>Mon–Thu and Sun: 10:00 AM – 9:00 PM<br/>Fri and Sat: 10:00 AM – 10:00 PM</p>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider mb-space-md">Get in touch</h4>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<p><a class="hover:text-on-surface underline underline-offset-4" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saissylois@gmail.com" target="_blank" rel="noopener">saissylois@gmail.com</a></p>
+<p><a class="hover:text-on-surface underline underline-offset-4" href="https://www.tiktok.com/@pingpongcity" target="_blank" rel="noopener">TikTok @pingpongcity</a></p>
+<p><a class="hover:text-on-surface underline underline-offset-4" href="https://www.facebook.com/groups/457045130589471" target="_blank" rel="noopener">Facebook group</a></p>
+</div>
+</div>
+</div>
+<div class="pt-space-lg flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>© 2026 PingPong City Sports Center</span>
+<span>Developed by <a class="text-on-surface underline underline-offset-4 hover:text-primary-container" href="https://www.facebook.com/keith.ciceron" target="_blank" rel="noopener">keith.dev</a></span>
+</div>
+</div>
+</footer>
+
+<script>
+  (function () {
+    // ---- Live open/closed status (Philippine time), from the posted opening hours.
+    // Keyed by JS weekday (0 = Sunday); minutes from midnight.
+    var HOURS = { 0: [600, 1260], 1: [600, 1260], 2: [600, 1260], 3: [600, 1260], 4: [600, 1260], 5: [600, 1320], 6: [600, 1320] };
+    function fmt(min) {
+      var h = Math.floor(min / 60);
+      return ((h + 11) % 12 + 1) + ':00 ' + (h < 12 ? 'AM' : 'PM');
+    }
+    function set(id, text) { var el = document.getElementById(id); if (el) el.textContent = text; }
+    function updateStatus() {
+      try {
+        var parts = new Intl.DateTimeFormat('en-US', { timeZone: 'Asia/Manila', weekday: 'short', hour: 'numeric', minute: 'numeric', hour12: false }).formatToParts(new Date());
+        var get = function (t) { return parts.filter(function (p) { return p.type === t; })[0].value; };
+        var day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(get('weekday'));
+        var min = (parseInt(get('hour'), 10) % 24) * 60 + parseInt(get('minute'), 10);
+        var open = HOURS[day][0], close = HOURS[day][1];
+        var status, next, live;
+        if (min >= open && min < close) {
+          status = 'Open now'; next = 'Closes at ' + fmt(close); live = 'Open now · closes ' + fmt(close);
+        } else if (min < open) {
+          status = 'Closed now'; next = 'Opens today at ' + fmt(open); live = 'Closed now · opens today ' + fmt(open);
+        } else {
+          var tomorrow = HOURS[(day + 1) % 7][0];
+          status = 'Closed now'; next = 'Opens tomorrow at ' + fmt(tomorrow); live = 'Closed now · opens tomorrow ' + fmt(tomorrow);
+        }
+        set('live-status', live);
+        set('today-status', status);
+        set('today-hours', next);
+        set('today-range', 'Hours today: ' + fmt(open) + ' – ' + fmt(close));
+      } catch (e) { /* leave the static text in place */ }
+    }
+    updateStatus();
+    setInterval(updateStatus, 60000);
+
+    // ---- Mobile menu
+    var btn = document.getElementById('menu-btn');
+    var panel = document.getElementById('mobile-nav');
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var menuAnim = null;
+    function setMenu(open) {
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      if (open === isOpen) return;
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      if (menuAnim) menuAnim.cancel();
+      if (open) panel.classList.remove('hidden');
+      if (!panel.animate) { panel.classList.toggle('hidden', !open); return; }
+      var from = { opacity: 0, transform: reduceMotion ? 'none' : 'translateY(-8px)' };
+      var to = { opacity: 1, transform: 'none' };
+      menuAnim = panel.animate(open ? [from, to] : [to, from], {
+        duration: open ? 200 : 150,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+      });
+      menuAnim.onfinish = function () { menuAnim = null; if (!open) panel.classList.add('hidden'); };
+    }
+    btn.addEventListener('click', function () { setMenu(btn.getAttribute('aria-expanded') !== 'true'); });
+    panel.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
+    window.addEventListener('resize', function () { if (window.innerWidth >= 1024) setMenu(false); });
+
+    // ---- Highlight the nav link for the section on screen
+    var ids = ['home', 'find-us', 'hours', 'rates', 'contact'];
+    var links = [].slice.call(document.querySelectorAll('[data-nav]'));
+    function mark(id) {
+      links.forEach(function (a) { a.setAttribute('aria-current', a.getAttribute('data-nav') === id ? 'true' : 'false'); });
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) { if (en.isIntersecting) mark(en.target.id); });
+      }, { rootMargin: '-35% 0px -55% 0px' });
+      ids.forEach(function (id) { var s = document.getElementById(id); if (s) io.observe(s); });
+    }
+
+    // ---- Scroll reveal: each element plays once, then stays put
+    var reveals = [].slice.call(document.querySelectorAll('.reveal'));
+    if ('IntersectionObserver' in window) {
+      var ro = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('is-visible'); ro.unobserve(en.target); }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      reveals.forEach(function (el) { ro.observe(el); });
+    } else {
+      reveals.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+  })();
+</script>
+
+<script type="module">
+  // Hero: a table tennis rally in three.js. If anything fails, the SVG table stays.
+  const stage = document.getElementById('stage');
+  const canvas = document.getElementById('hero-3d');
+
+  try {
+    const THREE = await import('https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(37, 5 / 3, 0.1, 50);
+    const camBase = new THREE.Vector3(0, 2.55, 2.75);
+    const lookAt = new THREE.Vector3(0, -0.05, 0.05);
+    camera.position.copy(camBase);
+    camera.lookAt(lookAt);
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x2a2a2a, 1.1));
+    const key = new THREE.DirectionalLight(0xffffff, 1.4);
+    key.position.set(1.5, 4, 2.5);
+    scene.add(key);
+
+    // Table dimensions in metres (regulation 2.74 x 1.525)
+    const L = 2.74, W = 1.525;
+
+    // Table top: printed with the rate board, same layout as the SVG fallback
+    const tex = document.createElement('canvas');
+    tex.width = 2048; tex.height = 1140;
+    const ctx = tex.getContext('2d');
+    function drawTop() {
+      const w = tex.width, h = tex.height;
+      ctx.fillStyle = '#1a1a1a'; ctx.fillRect(0, 0, w, h);
+      ctx.strokeStyle = '#e5e2e1'; ctx.lineWidth = 18; ctx.strokeRect(9, 9, w - 18, h - 18);
+      ctx.fillStyle = 'rgba(229,226,225,.3)'; ctx.fillRect(18, h / 2 - 3, w - 36, 6);
+      const big = "800 300px 'Big Shoulders Display', Arial, sans-serif";
+      const label = "700 76px 'Big Shoulders Display', Arial, sans-serif";
+      const small = "700 60px 'Big Shoulders Display', Arial, sans-serif";
+      const half = w / 2;
+      [[0, '₱100', '#e5e2e1', 'UNLI PLAY', 'STARTING RATE'], [half, '₱200', '#ff544f', 'SOLO RENTAL', 'PER HOUR']].forEach(([x0, price, color, l1, l2]) => {
+        const x = x0 + 150;
+        ctx.textBaseline = 'alphabetic';
+        ctx.font = big; ctx.fillStyle = color; ctx.fillText(price, x, 700);
+        if ('letterSpacing' in ctx) ctx.letterSpacing = '6px';
+        ctx.font = label; ctx.fillStyle = '#e9bcb8'; ctx.fillText(l1, x + 6, 820);
+        ctx.font = small; ctx.fillStyle = '#af8783'; ctx.fillText(l2, x + 6, 900);
+        if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
+      });
+    }
+    try {
+      await Promise.race([
+        document.fonts.load("800 300px 'Big Shoulders Display'"),
+        new Promise(r => setTimeout(r, 1500))
+      ]);
+    } catch (e) { /* draw with fallback fonts */ }
+    drawTop();
+    const topTex = new THREE.CanvasTexture(tex);
+    topTex.colorSpace = THREE.SRGBColorSpace;
+    topTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
+    const table = new THREE.Group();
+    const top = new THREE.Mesh(new THREE.PlaneGeometry(L, W), new THREE.MeshStandardMaterial({ map: topTex, roughness: 0.85 }));
+    top.rotation.x = -Math.PI / 2;
+    table.add(top);
+    const darkMat = new THREE.MeshStandardMaterial({ color: 0x111111, roughness: 0.9 });
+    const slab = new THREE.Mesh(new THREE.BoxGeometry(L, 0.04, W), darkMat);
+    slab.position.y = -0.021;
+    table.add(slab);
+    [[-1, -1], [1, -1], [-1, 1], [1, 1]].forEach(([sx, sz]) => {
+      const leg = new THREE.Mesh(new THREE.BoxGeometry(0.05, 0.72, 0.05), darkMat);
+      leg.position.set(sx * (L / 2 - 0.25), -0.4, sz * (W / 2 - 0.15));
+      table.add(leg);
+    });
+    // Net and posts
+    const NET_H = 0.1525;
+    const net = new THREE.Mesh(
+      new THREE.PlaneGeometry(W + 0.3, NET_H),
+      new THREE.MeshBasicMaterial({ color: 0xe5e2e1, transparent: true, opacity: 0.35, side: THREE.DoubleSide, depthWrite: false })
+    );
+    net.rotation.y = Math.PI / 2;
+    net.position.set(0, NET_H / 2, 0);
+    table.add(net);
+    const tape = new THREE.Mesh(new THREE.BoxGeometry(0.012, 0.012, W + 0.3), new THREE.MeshBasicMaterial({ color: 0xe5e2e1 }));
+    tape.position.set(0, NET_H, 0);
+    table.add(tape);
+    const postMat = new THREE.MeshStandardMaterial({ color: 0xff544f, roughness: 0.6 });
+    [-1, 1].forEach(s => {
+      const post = new THREE.Mesh(new THREE.BoxGeometry(0.03, NET_H + 0.02, 0.03), postMat);
+      post.position.set(0, (NET_H + 0.02) / 2, s * (W / 2 + 0.15));
+      table.add(post);
+    });
+    scene.add(table);
+
+    // Ball (drawn larger than regulation so it reads at this size) and its contact shadow
+    const R = 0.045;
+    const ball = new THREE.Mesh(new THREE.SphereGeometry(R, 32, 16), new THREE.MeshStandardMaterial({ color: 0xfde400, roughness: 0.35, emissive: 0x3a3300 }));
+    scene.add(ball);
+    const shadow = new THREE.Mesh(new THREE.CircleGeometry(R * 1.1, 32), new THREE.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.4, depthWrite: false }));
+    shadow.rotation.x = -Math.PI / 2;
+    shadow.position.y = 0.002;
+    scene.add(shadow);
+
+    // Paddles
+    function makePaddle() {
+      const g = new THREE.Group();
+      const blade = new THREE.Mesh(new THREE.CylinderGeometry(0.11, 0.11, 0.014, 40), new THREE.MeshStandardMaterial({ color: 0xff544f, roughness: 0.7 }));
+      blade.rotation.z = Math.PI / 2;
+      const handle = new THREE.Mesh(new THREE.BoxGeometry(0.02, 0.11, 0.03), new THREE.MeshStandardMaterial({ color: 0x5a4030, roughness: 0.8 }));
+      handle.position.y = -0.15;
+      g.add(blade, handle);
+      return g;
+    }
+    const paddles = { '-1': makePaddle(), '1': makePaddle() };
+    const PADDLE_X = 1.62, HIT_Y = 0.3;
+    Object.entries(paddles).forEach(([side, p]) => { p.position.set(+side * PADDLE_X, HIT_Y, 0); p.userData = { swing: 0, z: 0, targetZ: 0 }; scene.add(p); });
+
+    // Rally: each shot is one arc over the net to a bounce, then a short arc up to the other paddle
+    const rand = (a, b) => a + Math.random() * (b - a);
+    let shot = null;
+    function newShot(from, startZ) {
+      const dir = -from;
+      const bounce = { x: dir * rand(0.5, 1.05), y: R, z: rand(-0.55, 0.55) };
+      const end = { x: dir * (PADDLE_X - 0.08), y: HIT_Y + rand(-0.03, 0.05), z: THREE.MathUtils.clamp(bounce.z + rand(-0.2, 0.2), -0.65, 0.65) };
+      shot = {
+        from,
+        a: { x: from * (PADDLE_X - 0.08), y: HIT_Y, z: startZ },
+        b: bounce, c: end,
+        d1: rand(0.58, 0.7), d2: 0.32,
+        peak1: rand(0.34, 0.42), peak2: end.y + 0.12,
+        t: 0
+      };
+      paddles[from].userData.swing = 1;
+      paddles[dir].userData.targetZ = end.z;
+    }
+    // Quadratic arc through (p0) -> peak -> (p1), s in 0..1
+    function arcY(y0, peak, y1, s) {
+      const c = 2 * peak - (y0 + y1) / 2;
+      return (1 - s) * (1 - s) * y0 + 2 * (1 - s) * s * c + s * s * y1;
+    }
+    function ballAt(sh, t) {
+      if (t < sh.d1) {
+        const s = t / sh.d1;
+        return [THREE.MathUtils.lerp(sh.a.x, sh.b.x, s), arcY(sh.a.y, sh.peak1, sh.b.y, s), THREE.MathUtils.lerp(sh.a.z, sh.b.z, s)];
+      }
+      const s = Math.min((t - sh.d1) / sh.d2, 1);
+      return [THREE.MathUtils.lerp(sh.b.x, sh.c.x, s), arcY(sh.b.y, sh.peak2, sh.c.y, s), THREE.MathUtils.lerp(sh.b.z, sh.c.z, s)];
+    }
+    newShot(-1, 0);
+
+    function placeBall(x, y, z) {
+      ball.position.set(x, y, z);
+      const over = Math.abs(x) < L / 2 && Math.abs(z) < W / 2;
+      const hgt = Math.max(y - R, 0);
+      shadow.visible = over;
+      shadow.position.x = x; shadow.position.z = z;
+      shadow.scale.setScalar(1 + hgt * 1.6);
+      shadow.material.opacity = 0.42 * Math.max(0, 1 - hgt / 0.6);
+    }
+
+    // Subtle camera parallax, desktop pointers only
+    const look = { x: 0, y: 0, tx: 0, ty: 0 };
+    if (finePointer && !reduceMotion) {
+      stage.closest('section').addEventListener('pointermove', e => {
+        const r = stage.getBoundingClientRect();
+        look.tx = THREE.MathUtils.clamp((e.clientX - (r.left + r.width / 2)) / r.width, -1, 1);
+        look.ty = THREE.MathUtils.clamp((e.clientY - (r.top + r.height / 2)) / r.height, -1, 1);
+      });
+      stage.closest('section').addEventListener('pointerleave', () => { look.tx = 0; look.ty = 0; });
+    }
+
+    function resize() {
+      const w = stage.clientWidth, h = stage.clientHeight;
+      if (!w || !h) return;
+      renderer.setSize(w, h, false);
+      camera.aspect = w / h;
+      camera.updateProjectionMatrix();
+    }
+    resize();
+
+    function step(dt) {
+      // Ball
+      shot.t += dt;
+      if (shot.t >= shot.d1 + shot.d2) {
+        const endZ = shot.c.z, nextFrom = -shot.from;
+        newShot(nextFrom, endZ);
+      }
+      const [x, y, z] = ballAt(shot, shot.t);
+      placeBall(x, y, z);
+      // Paddles glide toward where the ball will arrive; swing decays after a hit
+      for (const side of ['-1', '1']) {
+        const p = paddles[side], u = p.userData;
+        u.z += (u.targetZ - u.z) * (1 - Math.exp(-dt * 7));
+        u.swing *= Math.exp(-dt * 9);
+        p.position.z = u.z;
+        p.rotation.z = +side * -u.swing * 0.6;
+        p.rotation.y = +side * u.swing * 0.25;
+      }
+      // Camera
+      const k = 1 - Math.exp(-dt * 4);
+      look.x += (look.tx - look.x) * k;
+      look.y += (look.ty - look.y) * k;
+      camera.position.set(camBase.x + look.x * 0.35, camBase.y - look.y * 0.18, camBase.z);
+      camera.lookAt(lookAt);
+    }
+
+    let running = false, last = 0, visible = true;
+    function frame(now) {
+      if (!running) return;
+      const dt = Math.min((now - last) / 1000, 1 / 30);
+      last = now;
+      step(dt);
+      renderer.render(scene, camera);
+      requestAnimationFrame(frame);
+    }
+    function start() {
+      if (running || reduceMotion || !visible || document.hidden) return;
+      running = true; last = performance.now();
+      requestAnimationFrame(frame);
+    }
+    function stop() { running = false; }
+
+    if (reduceMotion) {
+      // One still frame: ball mid-flight over the net
+      shot.t = shot.d1 * 0.5;
+      const [x, y, z] = ballAt(shot, shot.t);
+      placeBall(x, y, z);
+    } else {
+      step(0);
+    }
+    renderer.render(scene, camera);
+    stage.classList.add('is-3d');
+
+    new ResizeObserver(() => { resize(); if (!running) renderer.render(scene, camera); }).observe(stage);
+    new IntersectionObserver(entries => {
+      visible = entries[0].isIntersecting;
+      visible ? start() : stop();
+    }).observe(stage);
+    document.addEventListener('visibilitychange', () => { document.hidden ? stop() : start(); });
+    document.fonts && document.fonts.ready.then(() => { drawTop(); topTex.needsUpdate = true; if (!running) renderer.render(scene, camera); });
+    start();
+  } catch (err) {
+    // WebGL or the three.js download failed: keep the SVG table
+    stage.classList.remove('is-3d');
+    console.warn('3D table unavailable, showing the flat version.', err);
+  }
+</script>
+</body>
+</html>
